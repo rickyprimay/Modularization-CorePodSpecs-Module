@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  THIS IS TESTING MODULARIZATION LIBRARY.
                    DESC
 
   s.homepage     = "https://github.com/rickyprimay/Modularization-CorePodSpecs-Module"
@@ -80,7 +81,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/rickyprimay/Modularization-CorePodSpecs-Module", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/rickyprimay/Modularization-CorePodSpecs-Module.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +92,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files = "Core/**/*.{swift}"
+  s.source_files = "Core/**/*.{swift,h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
